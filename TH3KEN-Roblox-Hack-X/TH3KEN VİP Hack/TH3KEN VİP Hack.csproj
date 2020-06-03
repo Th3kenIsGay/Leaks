@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47C673DA-BB1D-41B4-89F7-4FA56C1FAF83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TH3KEN VİP Hack</RootNamespace>
+    <AssemblyName>TH3KEN VİP Hack</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>TH3KEN VİP Hack.ico</ApplicationIcon>
+    <StartupObject>ns0.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ns0\MyApplication.cs" />
+    <Compile Include="ns0\MyComputer.cs" />
+    <Compile Include="ns0\MyProject.cs" />
+    <Compile Include="ns0\MySettings.Designer.cs">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ns0\MySettingsProperty.cs" />
+    <Compile Include="ns1\Resources.cs" />
+    <Compile Include="ns2\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns2\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns2\GForm0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns2\GForm0.Designer.cs">
+      <DependentUpon>GForm0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns2\rbx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns2\rbx.Designer.cs">
+      <DependentUpon>rbx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns2\robloxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns2\robloxm.Designer.cs">
+      <DependentUpon>robloxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ns2\u.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ns2\u.Designer.cs">
+      <DependentUpon>u.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ns2\Form4.resources" />
+    <EmbeddedResource Include="ns2\GForm0.resources" />
+    <EmbeddedResource Include="ns2\rbx.resources" />
+    <EmbeddedResource Include="ns2\robloxm.resources" />
+    <EmbeddedResource Include="ns2\u.resources" />
+    <EmbeddedResource Include="Roblox_Giriş_X.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="ns0\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

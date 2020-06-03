@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile CurrentProfile="(Default)" GeneratedClassNamespace="rootip.My" GeneratedClassName="MySettings" xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="pattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">&lt;div id="icon-\d+-\d+" class="icondetail" style="height:170px;width:157px"&gt;&lt;div class="links"&gt;&lt;div class="fav" title="Add to Favorites"&gt;&lt;\/div&gt;&lt;div class="detail"&gt;.+&lt;\/a&gt;&lt;a href="(.*?)" class="lastitem"&gt;PNG&lt;\/a&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
